@@ -1,0 +1,20 @@
+
+[uranium]
+	#0 = Wood, 1 = Stone, 2 = Iron, 3 = Diamond, 4+ = Modded Items (See each individual Mod)
+	#Range: 0 ~ 100
+	harvest_level = 2
+	#The Size of eich Veign
+	#Range: 0 ~ 100
+	veign_size = 3
+	#Amount of Tries per Chunk to generate a Veign
+	#Range: 0 ~ 100
+	tries_amount = 8
+	#Bottom Edge for Overworld Generation
+	#Range: 0 ~ 255
+	bottom = 0
+	#Top Edge for Overworld Generation
+	#Range: 0 ~ 255
+	top = 64
+	#Enable Generation in the Overworld
+	enabled = true
+

@@ -1,0 +1,4 @@
+#The light level that the darkness should trigger at.
+#Range: 0 ~ 15
+darkness_level = 4
+

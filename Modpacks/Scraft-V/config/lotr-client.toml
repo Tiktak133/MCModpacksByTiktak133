@@ -1,0 +1,61 @@
+
+[environment]
+	#Toggle the Middle-earth sky renderer
+	modSky = true
+	#Toggle the Middle-earth cloud renderer
+	modClouds = true
+	#No comment
+	#Range: > 0
+	cloudRange = 1024
+	#The Aurora, or Northern Lights! May be a slightly performance-intensive feature for some users
+	northernLights = true
+	#No comment
+	sunGlare = true
+	#No comment
+	rainMist = true
+	#No comment
+	mistyMountainsMist = true
+	#New rain and snow textures (in Middle-earth), ash, and sandstorms
+	newWeatherRendering = true
+	#Replace rain ground particles in Middle-earth, to match the new rain textures
+	newRainGroundParticles = true
+
+[gui]
+	#Display the mod's custom main menu screen
+	modMainMenu = true
+	#No comment
+	sepiaMap = false
+	#No comment
+	mapLabels = true
+	#Will be automatically set to false after the world type help display has been shown once
+	showWorldTypeHelp = true
+	#No comment
+	fogOfWar = true
+
+[hud]
+	#Middle-earth on-screen compass
+	compass = true
+	#On-screen compass: coordinates and biome name
+	compassInfo = true
+	#Display the alignment meter even in non-mod dimensions
+	showAlignmentEverywhere = false
+	#Configure the x-position of the alignment meter on-screen. Negative values move it left, positive values right
+	#Range: > -2147483648
+	alignmentXOffset = 0
+	#Configure the y-position of the alignment meter on-screen. Negative values move it up, positive values down
+	#Range: > -2147483648
+	alignmentYOffset = 0
+
+[model]
+	#The number of wings on the swan knights' chestplates
+	#Range: 0 ~ 24
+	dolAmrothChestplateWings = 12
+
+[sound]
+	#No comment
+	windAmbience = true
+	#No comment
+	newRainSounds = true
+	#No comment
+	newThunderSounds = true
+

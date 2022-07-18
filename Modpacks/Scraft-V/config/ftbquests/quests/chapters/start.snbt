@@ -1,0 +1,20 @@
+{
+	id: "458FA75D0FFE4AEA"
+	group: ""
+	order_index: 0
+	filename: "start"
+	title: "Start"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: -1.5d
+		y: -0.5d
+		id: "4DF43D32EDBFF15D"
+		tasks: [{
+			id: "2272BF2D1F19F047"
+			type: "item"
+			item: "minecraft:oak_log"
+			consume_items: true
+		}]
+	}]
+}

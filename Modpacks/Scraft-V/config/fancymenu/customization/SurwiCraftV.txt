@@ -1,0 +1,112 @@
+type = menu
+
+customization-meta {
+  identifier = lotr.client.gui.LOTRMainMenuScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=400432%
+  orientation = mid-centered
+  x = 2
+  action = movebutton
+  y = 68
+}
+
+customization {
+  identifier = %id=400432%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=502396%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=502396%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=376372%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=400372%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=376432%
+  orientation = mid-centered
+  x = -124
+  action = movebutton
+  y = 69
+}
+
+customization {
+  identifier = %id=376432%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=502432%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = 92
+}
+
+customization {
+  identifier = %id=502432%
+  width = 200
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=502432%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=604432%
+  orientation = mid-centered
+  x = 103
+  action = movebutton
+  y = 68
+}
+
+customization {
+  identifier = %id=604432%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=400348%
+  action = vanilla_button_visibility_requirements
+}
+
+customization {
+  identifier = %id=400396%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = 68
+}
+
+customization {
+  identifier = %id=400396%
+  action = vanilla_button_visibility_requirements
+}
+

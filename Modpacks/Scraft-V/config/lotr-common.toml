@@ -1,0 +1,18 @@
+
+[gameplay]
+	#No comment
+	drunkSpeech = true
+	#Alignment gains depend on factions' areas of influence
+	areasOfInfluence = true
+	#Factions dislike if a player has + alignment with enemy factions
+	alignmentDraining = true
+
+[admin]
+	#Force hide or show players' map locations. 0 = per-player (default), 1 = force hide, 2 = force show
+	#Range: 0 ~ 2
+	forceMapLocations = 0
+
+[datapack-utility]
+	#If enabled, the mod will generate up-to-date biome JSON files for all its biomes and output them in the game directory during loading. These biome templates are provided to help datapack creators.
+	generateBiomeJsons = false
+

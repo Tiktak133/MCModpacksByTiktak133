@@ -1,0 +1,221 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screen.MainMenuScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  path = config/fancymenu/noc.png
+  wideformat = true
+  action = texturizebackground
+}
+
+customization {
+  path = config/fancymenu/If I made music for Minecraft's End Dimension (mp3cut.net).wav
+  loop = false
+  action = addaudio
+}
+
+customization {
+  orientation = bottom-left
+  shadow = true
+  x = 2
+  action = addtext
+  actionid = a8d5ecd0-0d70-4b63-8a12-0bd1514558321625517503089
+  y = -29
+  scale = 1.0
+  alignment = left
+  value = SurwiCraft V   [BETA v5.4]
+}
+
+customization {
+  identifier = %id=502346%
+  action = hidebutton
+}
+
+customization {
+  orientation = mid-centered
+  hoverlabel = 83.25.192.153:25565
+  buttonaction = joinserver
+  x = 2
+  width = 99
+  actionid = 31ea7862-69ff-4d92-b2e7-671dd04e867b1625655704311
+  action = addbutton
+  y = -18
+  label = Official Server
+  value = 83.25.192.153:25565
+  height = 20
+}
+
+customization {
+  identifier = %id=604382%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=400382%
+  orientation = mid-centered
+  x = -76
+  action = movebutton
+  y = 13
+}
+
+customization {
+  identifier = %id=400382%
+  width = 74
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=376382%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = 13
+}
+
+customization {
+  identifier = %id=400346%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=400322%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = -18
+}
+
+customization {
+  identifier = %id=400322%
+  width = 98
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=502382%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = 36
+}
+
+customization {
+  identifier = %id=502382%
+  width = 200
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=502382%
+  action = setbuttonlabel
+  value = Wyjdź do pulpitu
+}
+
+customization {
+  identifier = %id=502382%
+  action = sethoverlabel
+  label = Czy na pewno chcesz wyjść?
+}
+
+customization {
+  identifier = %id=400298%
+  orientation = mid-centered
+  x = -100
+  action = movebutton
+  y = -41
+}
+
+customization {
+  identifier = %id=400298%
+  action = sethoverlabel
+  label = Nie zalecane na słabszych CPU !
+}
+
+customization {
+  showname = true
+  orientation = mid-centered
+  crouching = false
+  x = -170
+  slim = false
+  actionid = 6d17ba0b-1a6a-4789-af3f-38d0754aa5891625525085793
+  action = addentity
+  y = 18
+  scale = 30
+  playername = %playername%
+  parrot = false
+}
+
+customization {
+  orientation = mid-centered
+  shadow = true
+  x = -172
+  action = addtext
+  actionid = 08b44bdd-1894-43bf-9fe0-4e1ce63eb1721625525139698
+  y = 22
+  scale = 1.0
+  alignment = centered
+  value = Witaj %playername%
+}
+
+customization {
+  orientation = mid-centered
+  hoverlabel = Aktualna wersja 5.4
+  buttonaction = openlink
+  x = 2
+  width = 99
+  actionid = 4aa360a4-dc06-4fe9-b12a-df31615dfa0b1625655704329
+  action = addbutton
+  y = 13
+  label = Aktualizacja
+  value = https://tiktakowski133.wixsite.com/modpacks/modpacks
+  height = 20
+}
+
+customization {
+  orientation = top-centered
+  basecolor = #ffff00
+  shadow = true
+  rotation = 20.0
+  x = 128
+  actionid = d5e02023-1feb-4887-bf1f-af39281f54811625654599540
+  action = addsplash
+  y = 42
+  scale = 1.0
+  refresh = false
+  text = Beta Testy 5.4
+  bouncing = true
+}
+
+customization {
+  orientation = bottom-left
+  shadow = true
+  x = 2
+  action = addtext
+  actionid = b0902847-cbc4-40f2-b005-1001a2006a171625655495459
+  y = -20
+  scale = 1.0
+  alignment = left
+  value = Forge: %version:forge%, Minecraft: %mcversion%
+}
+
+customization {
+  orientation = bottom-left
+  shadow = true
+  x = 2
+  action = addtext
+  actionid = ec5504d9-6748-4195-8952-4f878bce45d81625655620561
+  y = -11
+  scale = 1.0
+  alignment = left
+  value = Wszystkie mody: %totalmods%, aktywne: %loadedmods%
+}
+

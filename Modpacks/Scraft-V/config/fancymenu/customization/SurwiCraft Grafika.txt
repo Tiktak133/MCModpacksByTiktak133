@@ -1,0 +1,25 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screen.VideoSettingsScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  orientation = top-centered
+  basecolor = #ffff00
+  shadow = true
+  rotation = 0.0
+  x = -52
+  actionid = 00f04ee5-ca1c-4501-9cd0-f9a78ce5dc251625654787845
+  action = addsplash
+  y = 25
+  scale = 2.0
+  refresh = false
+  text = Nie zalecana jest zmiana ustawień graficznych !!!
+  bouncing = true
+}
+

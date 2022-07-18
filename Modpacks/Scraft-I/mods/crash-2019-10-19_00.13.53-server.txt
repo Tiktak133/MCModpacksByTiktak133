@@ -1,0 +1,117 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  FmlLoadingPlugin (multihotbarcore-1.12.2-1.0.1-build-T22.jar)
+  ObfuscatePlugin (Obfuscate-Mod-1.12.2.jar)
+Contact their authors BEFORE contacting forge
+
+// Oh - I know what I did wrong!
+
+Time: 19.10.19 00:13
+Description: Exception ticking world
+
+java.util.ConcurrentModificationException
+	at java.util.HashMap$HashIterator.remove(HashMap.java:1459)
+	at net.minecraft.world.gen.ChunkProviderServer.func_73156_b(ChunkProviderServer.java:262)
+	at net.minecraft.world.WorldServer.func_72835_b(WorldServer.java:207)
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:756)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71190_q(DedicatedServer.java:397)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:668)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at java.util.HashMap$HashIterator.remove(HashMap.java:1459)
+	at net.minecraft.world.gen.ChunkProviderServer.func_73156_b(ChunkProviderServer.java:262)
+	at net.minecraft.world.WorldServer.func_72835_b(WorldServer.java:207)
+
+-- Affected level --
+Details:
+	Level name: swiat
+	All players: 1 total; [EntityPlayerMP['Tiktak133'/857, l='swiat', x=239,02, y=56,46, z=-333,77]]
+	Chunk stats: ServerChunkCache: 539 Drop: 40
+	Level seed: 1220228639622259847
+	Level generator: ID 04 - customized, ver 0. Features enabled: true
+	Level generator options: {"coordinateScale":684.412,"heightScale":684.412,"lowerLimitScale":512.0,"upperLimitScale":512.0,"depthNoiseScaleX":200.0,"depthNoiseScaleZ":200.0,"depthNoiseScaleExponent":0.5,"mainNoiseScaleX":80.0,"mainNoiseScaleY":160.0,"mainNoiseScaleZ":80.0,"baseSize":8.5,"stretchY":12.0,"biomeDepthWeight":1.0,"biomeDepthOffset":0.0,"biomeScaleWeight":1.0,"biomeScaleOffset":0.0,"seaLevel":63,"useCaves":true,"useDungeons":true,"dungeonChance":8,"useStrongholds":true,"useVillages":true,"useMineShafts":true,"useTemples":true,"useMonuments":true,"useMansions":true,"useRavines":true,"useWaterLakes":true,"waterLakeChance":4,"useLavaLakes":true,"lavaLakeChance":80,"useLavaOceans":false,"fixedBiome":-1,"biomeSize":4,"riverSize":4,"dirtSize":33,"dirtCount":10,"dirtMinHeight":0,"dirtMaxHeight":256,"gravelSize":33,"gravelCount":8,"gravelMinHeight":0,"gravelMaxHeight":256,"graniteSize":33,"graniteCount":10,"graniteMinHeight":0,"graniteMaxHeight":80,"dioriteSize":33,"dioriteCount":10,"dioriteMinHeight":0,"dioriteMaxHeight":80,"andesiteSize":33,"andesiteCount":10,"andesiteMinHeight":0,"andesiteMaxHeight":80,"coalSize":50,"coalCount":25,"coalMinHeight":0,"coalMaxHeight":128,"ironSize":42,"ironCount":23,"ironMinHeight":0,"ironMaxHeight":64,"goldSize":19,"goldCount":3,"goldMinHeight":0,"goldMaxHeight":35,"redstoneSize":8,"redstoneCount":8,"redstoneMinHeight":0,"redstoneMaxHeight":39,"diamondSize":8,"diamondCount":2,"diamondMinHeight":0,"diamondMaxHeight":16,"lapisSize":7,"lapisCount":1,"lapisCenterHeight":16,"lapisSpread":16}
+	Level spawn location: World: (300,74,-263), Chunk: (at 12,4,9 in 18,-17; contains blocks 288,0,-272 to 303,255,-257), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,0,-512 to 511,255,-1)
+	Level time: 4206729 game time, 47858 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 1 (now: false), thunder time: 1 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:756)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71190_q(DedicatedServer.java:397)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:668)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Thread.java:748)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Linux (amd64) version 4.9.0-9-amd64
+	Java Version: 1.8.0_211, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 202778432 bytes (193 MB) / 1750597632 bytes (1669 MB) up to 3817865216 bytes (3641 MB)
+	JVM Flags: 5 total; -Xmx4096M -Xms512M -XX:MaxPermSize=512m -XX:+CMSClassUnloadingEnabled -XX:+CMSPermGenSweepingEnabled
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP 9.42 Powered by Forge 14.23.5.2838 39 mods loaded, 39 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID                    | Version                | Source                                        | Signature                                |
+	|:------ |:--------------------- |:---------------------- |:--------------------------------------------- |:---------------------------------------- |
+	| LCHIJA | minecraft             | 1.12.2                 | minecraft.jar                                 | None                                     |
+	| LCHIJA | mcp                   | 9.42                   | minecraft.jar                                 | None                                     |
+	| LCHIJA | FML                   | 8.0.99.99              | forge.jar                                     | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJA | forge                 | 14.23.5.2838           | forge.jar                                     | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJA | multihotbarcore       | 1.12.2-1.0.1-build-T22 | minecraft.jar                                 | None                                     |
+	| LCHIJA | obfuscate             | 0.2.6                  | minecraft.jar                                 | None                                     |
+	| LCHIJA | aether_legacy         | 1.4.4                  | Aether-Legacy-Mod-1.12.2.jar                  | None                                     |
+	| LCHIJA | battletowers          | 1.6.4                  | BattleTowers-Mod-1.12.2.jar                   | None                                     |
+	| LCHIJA | betterquesting        | 3.5.300                | BetterQuesting-3.5.300.jar                    | None                                     |
+	| LCHIJA | camera                | 1.0.8                  | camera-1.0.8.jar                              | None                                     |
+	| LCHIJA | carryon               | 1.12.2                 | Carry-On-Mod-1.12.2.jar                       | 55e88f24d04398481ae6f1ce76f65fd776f14227 |
+	| LCHIJA | codechickenlib        | 3.2.1.351              | CodeChickenLib-1.12.2-3.2.1.351-universal.jar | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+	| LCHIJA | modcurrency           | 1.12-1.3.11            | Currency-1.12.0-1.3.11.jar                    | None                                     |
+	| LCHIJA | dynamictrees          | 1.12.2-0.9.5           | Dynamic-Trees-Mod-1.12.2.jar                  | None                                     |
+	| LCHIJA | enderstorage          | 2.4.5.135              | Ender-Storage-Mod-1.12.2.jar                  | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+	| LCHIJA | forgemultipartcbe     | 2.5.0.71               | ForgeMultipart-1.12.2-2.5.0.71-universal.jar  | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+	| LCHIJA | microblockcbe         | 2.5.0.71               | ForgeMultipart-1.12.2-2.5.0.71-universal.jar  | None                                     |
+	| LCHIJA | minecraftmultipartcbe | 2.5.0.71               | ForgeMultipart-1.12.2-2.5.0.71-universal.jar  | None                                     |
+	| LCHIJA | futureminecraf        | 1.2.1.1                | FutureVersionsV1.2.1.1.jar                    | None                                     |
+	| LCHIJA | jei                   | 4.13.1.225             | jei_1.12.2-4.13.1.225.jar                     | None                                     |
+	| LCHIJA | lucky                 | 7.6.0                  | Lucky-Block-Mod-1.12.2.zip                    | None                                     |
+	| LCHIJA | cfm                   | 4.2.0                  | mrcrayfishs-furniture-1.12.2.jar              | None                                     |
+	| LCHIJA | mrtjpcore             | 2.1.3.35               | MrTJPCore-1.12.2-2.1.3.35-universal.jar       | None                                     |
+	| LCHIJA | multihotbar           | 1.12.2-4.1-build-T122  | Multi-Hotbar-Mod-1.12.2.jar                   | None                                     |
+	| LCHIJA | placeableitems        | 3.3                    | Placeable-Items-1.12.2.jar                    | None                                     |
+	| LCHIJA | r2s_c                 | 1.7.0                  | r2s-Core-1.12.2.jar                           | None                                     |
+	| LCHIJA | r2s_r                 | 1.4.2                  | r2s-Radio-Mod-1.12.2.jar                      | None                                     |
+	| LCHIJA | redstoneflux          | 2.1.0                  | RedstoneFlux-1.12-2.1.0.6-universal.jar       | 8a6abf2cb9e141b866580d369ba6548732eff25f |
+	| LCHIJA | refinedstorage        | 1.6.15                 | refinedstorage-1.6.15.jar                     | 57893d5b90a7336e8c63fe1c1e1ce472c3d59578 |
+	| LCHIJA | roguelike             | 1.8.0                  | RoguelikeDungeons-1.12.2-1.8.0.jar            | None                                     |
+	| LCHIJA | ruins                 | 17.1                   | Ruins-1.12.2.jar                              | None                                     |
+	| LCHIJA | valkyrielib           | 1.12.2-2.0.20.1        | valkyrielib-1.12.2-2.0.20.1.jar               | None                                     |
+	| LCHIJA | simplegenerators      | 1.12.2-2.0.20.2        | Simple-Generators-Mod-1.12.2.jar              | None                                     |
+	| LCHIJA | bq_standard           | 3.4.157                | StandardExpansion-3.4.157.jar                 | None                                     |
+	| LCHIJA | toughasnails          | 3.1.0.141              | Tough-As-Nails-Mod-1.12.2.jar                 | None                                     |
+	| LCHIJA | travellersbackpack    | 1.0.20.20              | TravellersBackpack-1.12.2-1.0.20.20.jar       | None                                     |
+	| LCHIJA | twilightforest        | 3.9.984                | twilightforest-1.12.2-3.9.984-universal.jar   | None                                     |
+	| LCHIJA | universalmodifiers    | 1.12.2-1.0.16.1        | valkyrielib-1.12.2-2.0.20.1.jar               | None                                     |
+	| LCHIJA | wumpleutil            | 2.12.6                 | wumpleutil-1.12.2-2.12.6.jar                  | 1e57901a90acd4a3a54295b6decff5397be51a31 |
+
+	Loaded coremods (and transformers): 
+FmlLoadingPlugin (multihotbarcore-1.12.2-1.0.1-build-T22.jar)
+  com.rolandoislas.multihotbar.asm.transformer.Transformer
+ObfuscatePlugin (Obfuscate-Mod-1.12.2.jar)
+  com.mrcrayfish.obfuscate.asm.ObfuscateTransformer
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 4; [EntityPlayerMP['Tiktak133'/857, l='swiat', x=239,02, y=56,46, z=-333,77]]
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)
