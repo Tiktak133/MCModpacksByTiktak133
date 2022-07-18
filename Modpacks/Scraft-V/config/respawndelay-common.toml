@@ -16,13 +16,13 @@
 	respawnWhenPlayerLogsIn = true
 	#The delay in seconds after which a spectating player will respawn. A value of -1 makes players never respawn automatically. The '/respawnall' command can still be used.
 	#Range: -1 ~ 3600
-	respawnDelayInSeconds = 300
+	respawnDelayInSeconds = 10
 	#The message which is sent to the player on death. Leave empty to disable.
-	onDeathMessage = "Zjebałeś się! Twój tryb gry został zmieniony na Spectator."
+	onDeathMessage = "You died! Your gamemode has been set to spectator."
 	#The message which is sent to players when they respawn. Leave empty to disable.
-	onRespawnMessage = "Zostałeś odrodzony"
+	onRespawnMessage = "You respawned."
 	#The message which is sent to players when they are waiting to be respawned. The text '<seconds_left>' will be replaced with the actual seconds left. Leave empty to disable.
-	waitingForRespawnMessage = "Zostaniesz odrodzony za <seconds_left> sekund."
+	waitingForRespawnMessage = "You will respawn in <seconds_left> seconds."
 	#When a player falls into the void, this determines the y position that's set after when a player enters spectator mode.
 	#Range: -50 ~ 256
 	lowestPossibleYCoordinate = -10

@@ -58,9 +58,12 @@
 	#Range: -5 ~ 5
 	potGap = 0
 	#Potion HUD mini mode
-	potMini = false
+	potMini = true
 	#Potion HUD horizontal mode
 	potHor = false
+	#Full bar duration
+	#Range: > 1
+	barDuration = 300
 
 #DONT TOUCH THESE FIELDS!
 [positions]
@@ -69,25 +72,25 @@
 	invValign = "CENTER"
 	#Inventory HUD horizontal align
 	#Allowed Values: LEFT, MIDDLE, RIGHT
-	invHalign = "LEFT"
+	invHalign = "MIDDLE"
 	#Inventory HUD position (X)
 	#Range: -9999 ~ 9999
-	xPos = 1
+	xPos = 0
 	#Inventory HUD position (Y)
 	#Range: -9999 ~ 9999
-	yPos = -33
+	yPos = -22
 	#Armor HUD vertical align
 	#Allowed Values: TOP, CENTER, BOTTOM
 	armValign = "BOTTOM"
 	#Armor HUD horizontal align
 	#Allowed Values: LEFT, MIDDLE, RIGHT
-	armHalign = "LEFT"
+	armHalign = "MIDDLE"
 	#Armor HUD position (X)
 	#Range: -9999 ~ 9999
-	xArmPos = 1
+	xArmPos = 0
 	#Armor HUD position (Y)
 	#Range: -9999 ~ 9999
-	yArmPos = 120
+	yArmPos = 70
 	#Potion HUD vertical align
 	#Allowed Values: TOP, CENTER, BOTTOM
 	potValign = "TOP"
@@ -96,10 +99,10 @@
 	potHalign = "LEFT"
 	#Potion HUD position (X)
 	#Range: -9999 ~ 9999
-	xPotionPos = 1
+	xPotionPos = 20
 	#Potion HUD position (Y)
 	#Range: -9999 ~ 9999
-	yPotionPos = 19
+	yPotionPos = 20
 	#Helmet position (X)
 	#Range: -9999 ~ 9999
 	helmPosX = 103

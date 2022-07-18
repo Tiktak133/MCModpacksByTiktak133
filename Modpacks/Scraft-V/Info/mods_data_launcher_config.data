@@ -10,9 +10,11 @@ config\artifacts-client.toml
 config\artifacts-common.toml
 config\attributefix-common.toml
 config\automaticdoors-common.toml
+config\ba-battletowers-config.toml
 config\basicdiscordrichpresence-client.toml
 config\beautifiedchatserver-common.toml
 config\betterdungeons-forge-1_16.toml
+config\betterf3.toml
 config\betterinvisibility-common.toml
 config\bettermineshafts-forge-1_16.toml
 config\betterstrongholds-forge-1_16.toml
@@ -25,6 +27,7 @@ config\cavesandcliffs-common.toml
 config\ccl.cfg
 config\cfm-client.toml
 config\cfm-common.toml
+config\chat_heads.json5
 config\ChickenChunks.cfg
 config\chunkanimator-client.toml
 config\citadel-common.toml
@@ -34,6 +37,7 @@ config\craft_time.json
 config\craft_time_sample.json
 config\create-client.toml
 config\create-common.toml
+config\createaddition-common.toml
 config\curios-client.toml
 config\customizableelytra-common.toml
 config\damagetilt-common.toml
@@ -55,6 +59,8 @@ config\enchdesc-client.toml
 config\endergetic-common.toml
 config\endrem.toml
 config\engulfingdarkness-common.toml
+config\enhancedvisuals-client.json
+config\enhancedvisuals.json
 config\esrainplants-common.toml
 config\exoticbirds-common.toml
 config\extremesoundmuffler-client.toml
@@ -76,10 +82,16 @@ config\ftbchunks-client.toml
 config\furnacemk2-client.toml
 config\gemsnjewels-common.toml
 config\goblintraders-common.toml
+config\gocurrency-common.toml
 config\guardvillagers-client.toml
 config\guardvillagers-common.toml
 config\hats-client.toml
+config\headshot-common.toml
 config\ichunutil.toml
+config\immersiveengineering-client.toml
+config\immersiveengineering-common.toml
+config\immersivepetroleum-client.toml
+config\immersivepetroleum-common.toml
 config\immersive_portals-client.toml
 config\immersive_portals-common.toml
 config\ineedthemores-aluminum.toml
@@ -116,8 +128,11 @@ config\mutantbeasts-common.toml
 config\neat-client.toml
 config\notenoughanimations.json
 config\performant-common.toml
+config\polymorph-integrations.toml
 config\PregenConfig.toml
 config\randompatches.toml
+config\realistictorches-common.toml
+config\refinedstorage-client.toml
 config\repurposed_structures-common.toml
 config\repurposed_structures-dungeons.toml
 config\repurposed_structures-mansions.toml
@@ -133,6 +148,7 @@ config\respawndelay-common-1.toml.bak
 config\respawndelay-common-2.toml.bak
 config\respawndelay-common.toml
 config\ringsofascension-common.toml
+config\rsrequestify-common.toml
 config\sdrp-client.toml
 config\servertabinfo-client.toml
 config\servertabinfo-server.toml
@@ -143,6 +159,8 @@ config\skiing-common.toml
 config\sodium-mixins.properties
 config\soundfilters-client.toml
 config\spartanshields-common.toml
+config\spiders-2.0.toml
+config\steampowered-common.toml
 config\storagedrawers-client.toml
 config\storagedrawers-common.toml
 config\structurescompass-client.toml
@@ -163,6 +181,7 @@ config\totaldarkness-client.toml
 config\towers_of_the_wild-common.toml
 config\travelersbackpack-client.toml
 config\travelersbackpack-common.toml
+config\travelerstitles-forge-1_16.toml
 config\twilightforest-client.toml
 config\twilightforest-common.toml
 config\twoplayersonehorse-client.toml
@@ -177,8 +196,10 @@ config\wailaharvestability-client.toml
 config\waystones-client.toml
 config\waystones-common.toml
 config\waystones-server.toml
+config\when-dungeons-arise-common.toml
 config\whendungeonsarise.json
 config\when_dungeons_arise-common.toml
+config\wirelesschargers-common.toml
 config\alexsmobs\alligator_snapping_turtle_spawns.json
 config\alexsmobs\bald_eagle_spawns.json
 config\alexsmobs\blobfish_spawns.json
@@ -753,6 +774,13 @@ config\lucky\1.16.5-2-forge\structures\lucky_buildings\fort.nbt
 config\lucky\1.16.5-2-forge\structures\lucky_buildings\fort_inner.luckystruct
 config\lucky\1.16.5-2-forge\structures\lucky_buildings\temple.nbt
 config\lucky\1.16.5-2-forge\structures\lucky_buildings\temple_inner.luckystruct
+config\Mekanism\client.toml
+config\Mekanism\gear.toml
+config\Mekanism\general.toml
+config\Mekanism\machine-storage.toml
+config\Mekanism\machine-usage.toml
+config\Mekanism\tiers.toml
+config\Mekanism\world.toml
 config\repurposed_structures-forge\bastions.toml
 config\repurposed_structures-forge\biome_dimension_allow_disallow_configs.json5
 config\repurposed_structures-forge\cities.toml
