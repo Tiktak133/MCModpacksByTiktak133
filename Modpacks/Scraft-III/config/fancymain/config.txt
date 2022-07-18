@@ -1,0 +1,15 @@
+##[general]
+
+[If true, the default animations will be pre-rendered at startup to prevent lagging.]
+B:preloadanimations = 'true';
+
+
+##[mainmenu]
+
+B:hidelogo = 'true';
+[Sets the animation frame at which the main menu buttons should start fading in.]
+I:mainmenufadeinframe = '60';
+B:hidebranding = 'true';
+B:hidesplashtext = 'true';
+I:mainmenufps = '24';
+B:playeverytime = 'true';
